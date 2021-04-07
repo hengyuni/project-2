@@ -12,7 +12,7 @@ export default function App () {
       const res = await fetch (`https://pokeapi.co/api/v2/pokemon?limit=151/`)
       const data = await res.json();
       setPokemonData(data.results);
-      console.log(data.results[2]);
+      // console.log(data.results[2]);
     } catch (err) {
       console.log(err);
     }
@@ -37,6 +37,7 @@ export default function App () {
         const pokemon = [...pokemonData].filter(
           (p) => p.id === routerProps.match.params.id
         );
+        console.log(pokemon)
         return <Pokemon {...routerProps} pokemon={pokemon[0]} />;
       }}
     />

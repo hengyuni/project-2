@@ -1,31 +1,30 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function Sprite ({pokemon}) {
-    const [pokemonPic, setPkPic] = useState("")
-    // const [pkPicShiny, setPkPicShiny] = useState("")
-    const [pokemonId, setPkId] = useState("")
+export default function Sprite ({ pokemon }) {
+  const [pokemonSprite, setPokemonSprite] = useState("")
+  const [pokemonId, setPokemonId] = useState("")
 
-    const fetchPic = async() => {
-        try {
-            const res = await fetch(pokemon.url);
-            const data = await res.json();
-            setPkPic(data.sprites.front_default)
-            // setPkPicShiny(data.sprites.front_shiny)
-            setPkId(data.id)
-        } catch (err) {
-            console.log(err);
-        }
+  const getSprite = async () => {
+    try {
+      const res = await fetch(pokemon.url);
+      const data = await res.json();
+      setPokemonSprite(data.sprites.front_default)
+      setPokemonId(data.id)
+      // console.log(data)
+    } catch (err) {
+      console.log(err)
     }
+  }
 
-    useEffect(()=> {
-      fetchPic();
-    }, []);
+  useEffect(()=>{
+    getSprite();
+  }, []);
 
-    return (
-        <div>
-            {/* <p>{pokemonId}</p> */}
-            <img width='150px' src={pokemonPic} alt={pokemon.name} />
-        </div>
-    )
-};
 
+  return (
+    <div>
+      {/* <p>{pokemonId}</p> */}
+      <img width="125px" src={pokemonSprite} alt={pokemon.name} />
+    </div>
+  )
+}
