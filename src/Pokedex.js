@@ -9,12 +9,12 @@ export default function Pokedex({ pokemonData }) {
   return (
     <div className="App">
       {/* <h1>{pokemonData[5].name}</h1> */}
-      <h1>Pokedex</h1>
+      <h1>POKEDEX</h1>
       {pokemonData.map((pokemon, i) => {
         return (
         <Link to={`/${pokemon.name}`} key={i}>
           <Sprite pokemon={pokemon} />
-          <h1>{pokemon.name}</h1>
+          <h3>{pokemon.name.toUpperCase()}</h3>
         </Link>
 
         )

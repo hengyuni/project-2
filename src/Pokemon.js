@@ -12,7 +12,7 @@ const Pokemon = (props) => {
   // console.log(mockData)
 
   const [pokemonData, setPokemonData] = useState(mockData)
-  const [deez, setDeez] = useState([])
+  const [types, setTypes] = useState([])
 
   const getData = async () => {
     let temp = null;
@@ -20,9 +20,9 @@ const Pokemon = (props) => {
       const res = await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
       const data = await res.json();
       if(data.types.length === 1) {
-        setDeez(<p>Type: {data.types[0].type.name.toUpperCase()}</p>);
+        setTypes(<p>Type: {data.types[0].type.name.toUpperCase()}</p>);
       } else {
-        setDeez(<p>Types: {data.types[0].type.name.toUpperCase()}/{data.types[1].type.name.toUpperCase()}</p>);
+        setTypes(<p>Types: {data.types[0].type.name.toUpperCase()}/{data.types[1].type.name.toUpperCase()}</p>);
       }
       setPokemonData(data)
     } catch (err) {
@@ -68,7 +68,7 @@ const Pokemon = (props) => {
           </p>
         )
       })} */}
-      {deez}
+      {types}
       <p>Height: {pokemonData.height}</p>
       <p>Weight: {pokemonData.weight}</p>
     </div>
