@@ -3,7 +3,7 @@
 export default function Stats({pokemonData}) {
   return (
     <div className="stats-container">
-        <h4>STATS:</h4>
+        {/* <h4>STATS:</h4> */}
           {pokemonData.stats &&
             pokemonData.stats.map((pokemon) => {
               return (
