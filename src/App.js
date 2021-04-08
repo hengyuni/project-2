@@ -44,3 +44,7 @@ export default function App () {
     </Switch>
   );
 }
+
+// add nav bar
+// add footer
+// add search engine?
