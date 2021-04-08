@@ -5,11 +5,11 @@ export default function Pokedex({ pokemonData }) {
   if (pokemonData === 'undefined') {
     return <h1>loading...</h1>
   }
-  console.log(pokemonData)
+  // console.log(pokemonData)
   return (
     <div className="App">
       {/* <h1>{pokemonData[5].name}</h1> */}
-      <h1>Pokedex page</h1>
+      <h1>Pokedex</h1>
       {pokemonData.map((pokemon, i) => {
         return (
         <Link to={`/${pokemon.name}`} key={i}>

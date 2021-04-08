@@ -1,8 +1,8 @@
 import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { useState, useEffect} from "react";
-import Pokemon from './Pokemon'
-import Pokedex from './Pokedex'
+import Pokemon from './Pokemon.js'
+import Pokedex from './Pokedex.js'
 // import mockData from './mockData'
 
 export default function App () {
@@ -37,7 +37,7 @@ export default function App () {
         const pokemon = [...pokemonData].filter(
           (p) => p.id === routerProps.match.params.id
         );
-        console.log(pokemon)
+        // console.log(pokemon)
         return <Pokemon {...routerProps} pokemon={pokemon[0]} />;
       }}
     />
