@@ -1,8 +1,8 @@
 import './App.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import { useState, useEffect} from "react";
-import Pokemon from './Pokemon.js'
-import Pokedex from './Pokedex.js'
+import Pokemon from './Component/Pokemon.js'
+import Pokedex from './Component/Pokedex.js'
 // import mockData from './mockData'
 
 export default function App () {

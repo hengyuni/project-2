@@ -1,4 +1,4 @@
-import Sprite from "./Component/Sprite"
+import Sprite from "./Sprite"
 import { Link } from 'react-router-dom'
 
 export default function Pokedex({ pokemonData }) {
