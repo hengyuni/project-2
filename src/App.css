@@ -1,3 +1,13 @@
+.pokedex-container {
+  text-align: center;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .App {
   text-align: center;
 }
@@ -10,6 +20,26 @@ a {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.pokemon-container {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemonPage-img {
+  border: 1px solid black;
+}
+
+.basic-info {
+  border: 1px solid black;
+}
+
+.stats-container{
+  border: 1px solid black;
 }
 
 @media (prefers-reduced-motion: no-preference) {

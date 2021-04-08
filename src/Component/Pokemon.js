@@ -2,6 +2,7 @@ import React from 'react'
 // import Sprite from './Component/Sprite'
 import { useState, useEffect} from 'react'
 import mockData from "../mockData.json"
+import Stats from "./Stats.js"
 
 const Pokemon = (props) => {
   const {match} = props;
@@ -15,7 +16,7 @@ const Pokemon = (props) => {
   const [types, setTypes] = useState([])
 
   const getData = async () => {
-    let temp = null;
+    // let temp = null;
     try {
       const res = await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemonId)
       const data = await res.json();
@@ -55,25 +56,37 @@ const Pokemon = (props) => {
   return (
     <div className="App">
       <h1>{pokemonId.toUpperCase()}</h1>
-      <img src={pokemonData.sprites.front_default} alt="pokemon front" width="150px"/>
-       {/* <Sprite pokemon={pokemonId} /> */}
-      {/* <h1>{pokemonId}</h1> */}
-      {/* {pokemonData.types.map((type, i) => {
-        // figure out to show types on one line!!!
-        return (
-          <p className={type.type.name} key={i}>
-            Type: {type.type.name}
-          </p>
-        )
-      })} */}
-      {types}
-      <p>HEIGHT: {pokemonData.height}m</p>
-      <p>WEIGHT: {pokemonData.weight}kg</p>
-      {/*Base Experience*/}
-      {/*Stats[HP, Attack, Defense, SP-Atk, SP-Def, Spd]*/}
+      <div className="pokemon-container">
+      <img src={pokemonData.sprites.front_default} alt="pokemon front" width="150px" className="pokemonPage-img"/>
+      <div className="basic-info">
+        {types}
+        <p>HEIGHT: {pokemonData.height}m</p>
+        <p>WEIGHT: {pokemonData.weight}kg</p>
+        <p>
+          BASE EXP: {pokemonData.base_experience}
+        </p>
+      </div>
+      <Stats pokemonData={pokemonData}/>
+      </div>
+      {/* <div className="stats-container">
+        <h4>STATS:</h4>
+          {pokemonData.stats &&
+            pokemonData.stats.map((pokemon) => {
+              return (
+                <div className="stats">
+                  <p key={pokemon.stat.name}>
+                    {pokemon.stat.name.toUpperCase()}: {pokemon.base_stat}
+                  </p>
+                </div>
+              );
+            })}
+        </div> */}
     </div>
   );
 }
 
 export default Pokemon;
+
+
+
 
