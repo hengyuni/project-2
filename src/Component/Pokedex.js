@@ -8,13 +8,14 @@ export default function Pokedex({ pokemonData }) {
   // console.log(pokemonData)
   return (
     <div className="pokedex-container">
-      <h1>POKÉDEX</h1>
+      {/* <h1>POKÉDEX</h1> */}
       <div className="pokedex">
       {pokemonData.map((pokemon, i) => {
+        // console.log(pokemon)
         return (
         <Link to={`/${pokemon.name}`} key={i}>
           <Sprite pokemon={pokemon} />
-          <h3>{pokemon.name.toUpperCase()}</h3>
+          <h4 className="main-text">{pokemon.name.toUpperCase()}</h4>
         </Link>
         )
       })}
@@ -22,7 +23,3 @@ export default function Pokedex({ pokemonData }) {
     </div>
   );
 }
-        
-
-
-

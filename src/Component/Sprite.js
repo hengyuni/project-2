@@ -24,7 +24,7 @@ export default function Sprite ({ pokemon }) {
   return (
     <div>
       {/* <p>{pokemonId}</p> */}
-      <img width="125px" src={pokemonSprite} alt={pokemon.name} />
+      <img src={pokemonSprite} alt={pokemon.name} className="sprite" width="125px"/>
     </div>
   )
 }

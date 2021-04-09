@@ -10,7 +10,7 @@ export default function App () {
   const [pokemonData, setPokemonData] = useState([]);
   const getPokemonData = async () => {
     try {
-      const res = await fetch (`https://pokeapi.co/api/v2/pokemon?limit=30/`)
+      const res = await fetch (`https://pokeapi.co/api/v2/pokemon?limit=151/`)
       const data = await res.json();
       setPokemonData(data.results);
       // console.log(data.results[2]);
@@ -25,7 +25,8 @@ export default function App () {
   return (
     <div>
       <nav>
-        <Link to="/"><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/bd571ae3cac22f6.png" alt="pokeball" width="100px" /></Link>
+        <Link to="/" ><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/bd571ae3cac22f6.png" alt="pokeball" width="100px" /></Link>
+        <Link to="/" className="nav-text">POKEDEX</Link>
       </nav>
       <Switch>
         {/* <Route
@@ -52,5 +53,8 @@ export default function App () {
   );
 }
 
-// add footer
+
+// move headline link into nav?
+// change fonts!!!
+// change footer text/image!!!
 // add search engine?

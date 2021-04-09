@@ -52,16 +52,18 @@ const Pokemon = (props) => {
   // let secondType = pokemonData.type[1].type.name;
   // let setSecondType = secondType !== "undefined" ? secondType : null;
 
-  console.log(pokemonData.types);
+  // console.log(pokemonData.types);
   return (
     <div className="App">
       <h1>{pokemonId.toUpperCase()}</h1>
       <div className="pokemon-container">
-      <img src={pokemonData.sprites.front_default} alt="pokemon front" width="150px" className="pokemonPage-img"/>
+        <div className="pokemon-image-container">
+          <img src={pokemonData.sprites.front_default} alt="pokemon front" width="150px" className="pokemonPage-img"/>
+        </div>
       <div className="basic-info">
         {types}
-        <p>HEIGHT: {pokemonData.height}m</p>
-        <p>WEIGHT: {pokemonData.weight}kg</p>
+        <p>HEIGHT: {pokemonData.height / 10}m</p>
+        <p>WEIGHT: {pokemonData.weight / 10}kg</p>
         <p>
           BASE EXP: {pokemonData.base_experience}
         </p>
@@ -86,6 +88,7 @@ const Pokemon = (props) => {
 }
 
 export default Pokemon;
+
 
 
 

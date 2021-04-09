@@ -15,5 +15,5 @@ export default function Stats({pokemonData}) {
               );
             })}
         </div>
-  )
+  )  
 }
