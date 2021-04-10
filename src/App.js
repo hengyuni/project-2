@@ -53,8 +53,5 @@ export default function App () {
   );
 }
 
-
-// move headline link into nav?
-// change fonts!!!
-// change footer text/image!!!
+// CHANGE FONT!!
 // add search engine?
