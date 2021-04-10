@@ -145,7 +145,7 @@ footer {
 /* @media query */
 /* FIX CONTENT TO CENTER WHEN MINIMIZED*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 735px) {
 	nav {
 		background-color: #363b81;
 		/* font-size: 40px; */

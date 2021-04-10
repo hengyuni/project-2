@@ -54,4 +54,9 @@ export default function App () {
 }
 
 // CHANGE FONT!!
+
+// EDIT FOOTER TEXT!!
+
+// HOVER EFFECT TO SHINY POKEMON!!!
+
 // add search engine?

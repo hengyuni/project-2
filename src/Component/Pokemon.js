@@ -55,12 +55,13 @@ const Pokemon = (props) => {
   // console.log(pokemonData.types);
   return (
     <div className="App">
-      <h1>{pokemonId.toUpperCase()}</h1>
+      <h1>#{pokemonData.id}. {pokemonId.toUpperCase()}</h1>
       <div className="pokemon-container">
         <div className="pokemon-image-container">
           <img src={pokemonData.sprites.front_default} alt="pokemon front" width="150px" className="pokemonPage-img"/>
         </div>
       <div className="basic-info">
+        {/* <p>{pokemonData.id}</p> */}
         {types}
         <p>HEIGHT: {pokemonData.height / 10}m</p>
         <p>WEIGHT: {pokemonData.weight / 10}kg</p>
