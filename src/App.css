@@ -1,6 +1,7 @@
 * {
 	color: rgb(49, 49, 49);
 	font-family: 'Courier New', Courier, monospace;
+	/* text-transform: uppercase; */
 }
 
 body {
@@ -18,7 +19,10 @@ nav {
 }
 
 .nav-text {
-	font-size: 55px;
+	margin-left: -15px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 40px;
+	text-shadow: 3px 3px #c40000;
 	font-weight: bolder;
 	color: whitesmoke;
 	align-self: center;
@@ -83,6 +87,10 @@ a {
 	align-items: center;
 }
 
+/* .sprite {
+	filter: drop-shadow(5px 5px 5px #222);
+} */
+
 .pokemon-image-container:hover {
 	transform: scale(1.03);
 }
@@ -123,10 +131,10 @@ footer {
 	bottom: 0;
 	right: 0; */
 	width: 100%;
-	font-size: 25px;
+	font-size: 15px;
 	text-align: center;
 	background-color: #fbd743;
-	height: 80px;
+	height: 60px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -189,6 +197,7 @@ footer {
 
 	.pokemon-image-container > img {
 		width: 250px;
+		/* filter: drop-shadow(2px 2px #222); */
 	}
 
 	.basic-info {

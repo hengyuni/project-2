@@ -26,7 +26,7 @@ export default function App () {
     <div>
       <nav>
         <Link to="/" ><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/bd571ae3cac22f6.png" alt="pokeball" width="100px" /></Link>
-        <Link to="/" className="nav-text">POKEDEX</Link>
+        <Link to="/" className="nav-text">POKÉDEX</Link>
       </nav>
       <Switch>
         {/* <Route
@@ -55,8 +55,14 @@ export default function App () {
 
 // CHANGE FONT!!
 
-// EDIT FOOTER TEXT!!
+// EDIT FOOTER TEXT!! or **add more stuff? **HFM
 
-// HOVER EFFECT TO SHINY POKEMON!!!
+// get rid of box on image and make shadow just from .png
 
-// add search engine?
+// HOVER EFFECT TO SHINY POKEMON!!! **maybe figure out? HFM
+
+// READ ME!!
+
+// OUTCOMES!! FUCKING RESA!!
+
+// add search engine? HFM
