@@ -4,7 +4,7 @@
 
 A Simple pokedex that fetches data using async and ReactJS.
 
-## `Game Link`
+## `App Link`
 
 > > link goes here
 
