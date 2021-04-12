@@ -20,9 +20,11 @@ Create a main App page that links to other components of the page using using Re
 
 ### `Technology Used`
 
+- Macbook Pro
 - ReactJS
 - Node Modules
 - Javascript
+- HTML
 - CSS
   - Flex display :muscle:
 
@@ -37,4 +39,4 @@ Create a main App page that links to other components of the page using using Re
 
 ### `Conclusion`
 
-Reached my goals to make a simple easy to view clean web app. Will be adding more from `Future Goals` as the cohort goes.
+Reached my goals to make a simple and easy to view clean web app. Will be adding more from `Future Goals` as the cohort goes.
