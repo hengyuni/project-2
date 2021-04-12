@@ -31,10 +31,8 @@ Create a main App page that links to other components of the page using using Re
 ### `Future Goals`
 
 - [ ] Add search bar
-- [ ] User ability to change generations & number of pokemons displayed
 - [ ] Hovered pokemon turns shiny
 - [ ] Battle simulator
-- [ ] Load random facts if loading screen occurs.
 - [ ] Dark mode
 
 ### `Conclusion`

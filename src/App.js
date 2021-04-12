@@ -53,16 +53,8 @@ export default function App () {
   );
 }
 
-// CHANGE FONT!!
-
-// EDIT FOOTER TEXT!! or **add more stuff? **HFM
-
-// get rid of box on image and make shadow just from .png
-
 // HOVER EFFECT TO SHINY POKEMON!!! **maybe figure out? HFM
 
 // READ ME!!
-
-// OUTCOMES!! FUCKING RESA!!
 
 // add search engine? HFM
