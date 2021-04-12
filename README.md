@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Simple Pokédex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> > add screenshot
 
-## Available Scripts
+Little pokedex that fetches data from pokeapi.com
 
-In the project directory, you can run:
+## `Game Link`
 
-### `yarn start`
+> > link goes here
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Approach`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Create a main App page that links to other components of the page using using React Router.
 
-### `yarn test`
+### `Methods Used`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ReactJs
+- useState/useEffect
+- Router/Route/Switch/Link
 
-### `yarn build`
+### `Technology Used`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ReactJS
+- Node Modules
+- Javascript
+- CSS
+  - Flex display :muscle:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Future Goals`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Add search bar
+- [ ] Add user ability to change generations and pokemons displayed
+- [ ] Hovered pokemon turns shiny
+- [ ] Battle simulator
+- [ ] Load random facts if loading screen occurs.
+- [ ] Dark mode
 
-### `yarn eject`
+### `Conclusion`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Reached my goals to make a simple easy to view clean web app. Will be adding more from `Future Goals` as the cohort goes.
