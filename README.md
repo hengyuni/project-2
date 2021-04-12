@@ -1,8 +1,8 @@
-# Simple Pokédex
+# Pokédex
 
-> > add screenshot
+![pokedex screenshot](Assets/mainScreenShot.png)
 
-Little pokedex that fetches data from pokeapi.com
+A Simple pokedex that fetches data using async and ReactJS.
 
 ## `Game Link`
 
@@ -31,7 +31,7 @@ Create a main App page that links to other components of the page using using Re
 ### `Future Goals`
 
 - [ ] Add search bar
-- [ ] Add user ability to change generations and pokemons displayed
+- [ ] User ability to change generations & number of pokemons displayed
 - [ ] Hovered pokemon turns shiny
 - [ ] Battle simulator
 - [ ] Load random facts if loading screen occurs.
