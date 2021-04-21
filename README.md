@@ -30,6 +30,7 @@ Create a main App page that links to other components of the page using using Re
 
 ### `Future Goals`
 
+- [x] Mobile friendly
 - [ ] Add search bar
 - [ ] Hovered pokemon turns shiny
 - [ ] Battle simulator

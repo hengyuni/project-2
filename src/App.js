@@ -53,8 +53,6 @@ export default function App () {
   );
 }
 
-// HOVER EFFECT TO SHINY POKEMON!!! **maybe figure out? HFM
-
-// READ ME!!
+// HOVER EFFECT TO SHINY POKEMON!!! HFM
 
 // add search engine? HFM
